@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+app.use(cors())
+
 app.get("/api/information", (req, res) => {
   const response = {
     email: process.env.EMAIL,
