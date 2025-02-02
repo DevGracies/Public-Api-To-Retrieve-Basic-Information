@@ -9,7 +9,7 @@ app.use(cors());
 app.get("/api/information", (req, res) => {
   const response = {
     email: process.env.EMAIL,
-    curerent_datetime: new Date().toISOString(),
+    current_datetime: new Date().toISOString(),
     github_url: process.env.github_url,
   };
   res.json(response);
