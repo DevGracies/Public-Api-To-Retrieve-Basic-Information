@@ -2,7 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-app.use(cors())
+const cors = require("cors");
+
+app.use(cors());
 
 app.get("/api/information", (req, res) => {
   const response = {
